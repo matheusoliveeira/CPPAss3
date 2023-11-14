@@ -31,7 +31,6 @@ Rational::Rational(int numerator, int denominator) : numerator(numerator), denom
     cout << "\n------------------------------" << endl;
     cout << "Two Argument constructor fired" << endl;
     cout << "------------------------------" << endl;
-//    normalize();
 }
 
 Rational::Rational(const std::string& str) {
@@ -53,7 +52,6 @@ Rational::Rational(const std::string& str) {
             std::cerr << "Error: Denominator cannot be zero." << std::endl;
             exit(EXIT_FAILURE);
         }
-        normalize();
     } else {
         std::cerr << "Error: Invalid input format." << std::endl;
         exit(EXIT_FAILURE);
@@ -122,15 +120,7 @@ bool Rational::operator==(const Rational& other) const {
 }
 
 // Overloaded output operator
-//std::ostream& operator<<(std::ostream& os, const Rational& rational) {
-//    os << rational.numerator;
-//    if (rational.denominator != 1) {
-//        os << '/' << rational.denominator;
-//    }
-//    return os;
-//}
 std::ostream& operator<<(std::ostream& os, const Rational& rational) {
     os << rational.numerator << '/' << rational.denominator;
     return os;
 }
-
