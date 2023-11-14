@@ -127,9 +127,9 @@ int main() {
                 cout << "r4 / r5: " << result4 << endl;
 
                 // Comparison operators
-                cout << "\nr4 > r5: " << (r4 > r5) << endl;
-                cout << "r4 < r5: " << (r4 < r5) << endl;
-                cout << "r4 == r5: " << (r4 == r5) << endl;
+                cout << "\nr4 > r5: " << (r4 > r5 ? "true" : "false") << endl;
+                cout << "r4 < r5: " << (r4 < r5 ? "true" : "false") << endl;
+                cout << "r4 == r5: " << (r4 == r5 ? "true" : "false") << endl;
 
                 anotherFractionRun = false;
             }
