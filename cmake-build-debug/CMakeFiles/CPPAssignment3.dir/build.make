@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Users\W0471251\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\cmake\win\x64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Users\W0471251\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -E rm -f
+RM = C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\cmake\win\x64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\W0471251\CLionProjects\CPPAss3
+CMAKE_SOURCE_DIR = C:\Users\mathe\CLionProjects\CPPAss3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/CPPAssignment3.dir/depend.make
@@ -69,32 +69,32 @@ include CMakeFiles/CPPAssignment3.dir/progress.make
 include CMakeFiles/CPPAssignment3.dir/flags.make
 
 CMakeFiles/CPPAssignment3.dir/main.cpp.obj: CMakeFiles/CPPAssignment3.dir/flags.make
-CMakeFiles/CPPAssignment3.dir/main.cpp.obj: C:/Users/W0471251/CLionProjects/CPPAss3/main.cpp
+CMakeFiles/CPPAssignment3.dir/main.cpp.obj: C:/Users/mathe/CLionProjects/CPPAss3/main.cpp
 CMakeFiles/CPPAssignment3.dir/main.cpp.obj: CMakeFiles/CPPAssignment3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPAssignment3.dir/main.cpp.obj"
-	C:\Users\W0471251\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPAssignment3.dir/main.cpp.obj -MF CMakeFiles\CPPAssignment3.dir\main.cpp.obj.d -o CMakeFiles\CPPAssignment3.dir\main.cpp.obj -c C:\Users\W0471251\CLionProjects\CPPAss3\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPPAssignment3.dir/main.cpp.obj"
+	C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPAssignment3.dir/main.cpp.obj -MF CMakeFiles\CPPAssignment3.dir\main.cpp.obj.d -o CMakeFiles\CPPAssignment3.dir\main.cpp.obj -c C:\Users\mathe\CLionProjects\CPPAss3\main.cpp
 
 CMakeFiles/CPPAssignment3.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPAssignment3.dir/main.cpp.i"
-	C:\Users\W0471251\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\W0471251\CLionProjects\CPPAss3\main.cpp > CMakeFiles\CPPAssignment3.dir\main.cpp.i
+	C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mathe\CLionProjects\CPPAss3\main.cpp > CMakeFiles\CPPAssignment3.dir\main.cpp.i
 
 CMakeFiles/CPPAssignment3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPAssignment3.dir/main.cpp.s"
-	C:\Users\W0471251\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\W0471251\CLionProjects\CPPAss3\main.cpp -o CMakeFiles\CPPAssignment3.dir\main.cpp.s
+	C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mathe\CLionProjects\CPPAss3\main.cpp -o CMakeFiles\CPPAssignment3.dir\main.cpp.s
 
 CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj: CMakeFiles/CPPAssignment3.dir/flags.make
-CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj: C:/Users/W0471251/CLionProjects/CPPAss3/Rational.cpp
+CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj: C:/Users/mathe/CLionProjects/CPPAss3/Rational.cpp
 CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj: CMakeFiles/CPPAssignment3.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj"
-	C:\Users\W0471251\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj -MF CMakeFiles\CPPAssignment3.dir\Rational.cpp.obj.d -o CMakeFiles\CPPAssignment3.dir\Rational.cpp.obj -c C:\Users\W0471251\CLionProjects\CPPAss3\Rational.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj"
+	C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj -MF CMakeFiles\CPPAssignment3.dir\Rational.cpp.obj.d -o CMakeFiles\CPPAssignment3.dir\Rational.cpp.obj -c C:\Users\mathe\CLionProjects\CPPAss3\Rational.cpp
 
 CMakeFiles/CPPAssignment3.dir/Rational.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPPAssignment3.dir/Rational.cpp.i"
-	C:\Users\W0471251\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\W0471251\CLionProjects\CPPAss3\Rational.cpp > CMakeFiles\CPPAssignment3.dir\Rational.cpp.i
+	C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\mathe\CLionProjects\CPPAss3\Rational.cpp > CMakeFiles\CPPAssignment3.dir\Rational.cpp.i
 
 CMakeFiles/CPPAssignment3.dir/Rational.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPPAssignment3.dir/Rational.cpp.s"
-	C:\Users\W0471251\AppData\Local\Programs\CLion\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\W0471251\CLionProjects\CPPAss3\Rational.cpp -o CMakeFiles\CPPAssignment3.dir\Rational.cpp.s
+	C:\Users\mathe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9559.58\bin\mingw\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\mathe\CLionProjects\CPPAss3\Rational.cpp -o CMakeFiles\CPPAssignment3.dir\Rational.cpp.s
 
 # Object files for target CPPAssignment3
 CPPAssignment3_OBJECTS = \
@@ -110,7 +110,7 @@ CPPAssignment3.exe: CMakeFiles/CPPAssignment3.dir/build.make
 CPPAssignment3.exe: CMakeFiles/CPPAssignment3.dir/linkLibs.rsp
 CPPAssignment3.exe: CMakeFiles/CPPAssignment3.dir/objects1.rsp
 CPPAssignment3.exe: CMakeFiles/CPPAssignment3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPPAssignment3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CPPAssignment3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CPPAssignment3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +122,6 @@ CMakeFiles/CPPAssignment3.dir/clean:
 .PHONY : CMakeFiles/CPPAssignment3.dir/clean
 
 CMakeFiles/CPPAssignment3.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\W0471251\CLionProjects\CPPAss3 C:\Users\W0471251\CLionProjects\CPPAss3 C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug C:\Users\W0471251\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles\CPPAssignment3.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\mathe\CLionProjects\CPPAss3 C:\Users\mathe\CLionProjects\CPPAss3 C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug C:\Users\mathe\CLionProjects\CPPAss3\cmake-build-debug\CMakeFiles\CPPAssignment3.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/CPPAssignment3.dir/depend
 

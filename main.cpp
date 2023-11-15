@@ -7,11 +7,9 @@ int main() {
 
     // Regex for validation
     regex validInputRegex(R"((-?\d+)|(-?\d+\/-?\d+))"); // Fraction or whole number
-    regex validFractionRegex(R"((-?\d+\/-?\d+))"); // Fraction
+    regex validFractionRegex(R"((-?\d+\/-?[1-9]\d*))"); // Fraction without zero denominator
     regex validWholeNumRegex(R"((-?\d+))"); // Whole number
-
     bool isRunning = true;
-    bool anotherFractionRun = true;
 
     do {
         string oneArgument;
@@ -25,10 +23,10 @@ int main() {
             cout << "\nPlease insert a whole number or press 'Q' to quit: " << endl;
             getline(cin, oneArgument);
 
-            // Check if the user typed 'Q' to quit entering courses
+            // Check if the user typed 'Q' to quit
             if (oneArgument == "Q") {
                 cout << "Quitting..\n" << endl;
-                break;
+                return 0;
             }
 
             if (regex_match(oneArgument, validWholeNumRegex)) {
@@ -51,28 +49,37 @@ int main() {
             cout << "\nPlease insert a whole number or press 'Q' to quit: " << endl;
             getline(cin, firstInput);
 
-            // Check if the user typed 'Q' to quit entering courses
+            // Check if the user typed 'Q' to quit
             if (firstInput == "Q") {
                 cout << "Quitting..\n" << endl;
-                break;
+                return 0;
             }
 
             if (regex_match(firstInput, validWholeNumRegex)) {
 
-                cout << "\nPlease insert another whole number: " << endl;
-                getline(cin, secondInput);
+                bool isValid = true;
 
-                if (regex_match(secondInput, validWholeNumRegex)) {
+                while(isValid) {
+                    cout << "\nPlease insert another whole number: " << endl;
+                    getline(cin, secondInput);
 
-                    // Convert both inputs to integer
-                    int fInput = stoi(firstInput);
-                    int sInput = stoi(secondInput);
+                    if (regex_match(secondInput, validWholeNumRegex)) {
 
-                    // Two Argument constructor
-                    Rational r3(fInput, sInput);
-                    cout << "r3: " << r3 << endl;
+                        if (secondInput != "0") {
+                            // Convert both inputs to integer
+                            int fInput = stoi(firstInput);
+                            int sInput = stoi(secondInput);
 
-                    twoArgumentRun = false;
+                            // Two Argument constructor
+                            Rational r3(fInput, sInput);
+                            cout << "r3: " << r3 << endl;
+
+                            twoArgumentRun = false;
+                            isValid = false;
+                        } else {
+                            cout << "\nThe second number (denominator) cannot be zero." << endl;
+                        }
+                    }
                 }
             }
         } while(twoArgumentRun);
@@ -84,57 +91,67 @@ int main() {
             cout << "\nPlease insert a fraction or press 'Q' to quit: " << endl;
             getline(cin, fraction);
 
-            // Check if the user typed 'Q' to quit entering courses
+            // Check if the user typed 'Q' to quit 
             if (fraction == "Q") {
                 cout << "Quitting..\n" << endl;
-                break;
+                return 0;
             }
 
             if (regex_match(fraction, validFractionRegex)) {
 
+                // String constructor
+                Rational r4(fraction);
+                cout << "r4: " << r4 << endl;
+
                 stringConstRun = false;
+
+                string anotherFraction;
+                bool anotherFractionRun = true;
+
+                do {
+                    cout << "\nPlease insert another fraction: " << endl;
+                    getline(cin, anotherFraction);
+
+                    if (regex_match(anotherFraction, validFractionRegex)) {
+
+                        // String constructor
+                        Rational r5(anotherFraction);
+                        cout << "r5: " << r5 << endl;
+
+                        // Overloaded operators
+                        Rational result1 = r4 + r5;
+                        cout << "r4 + r5: " << result1 << endl;
+
+                        Rational result2 = r4 - r5;
+                        cout << "r4 - r5: " << result2 << endl;
+
+                        Rational result3 = r4 * r5;
+                        cout << "r4 * r5: " << result3 << endl;
+
+                        try {
+                            Rational result4 = r4 / r5;
+                            cout << "r4 / r5: " << result4 << endl;
+                        } catch (const std::runtime_error& e) {
+                            cout << e.what() << endl;
+                        }
+
+                        cout << "\n-------------------------" << endl;
+                        cout << "Comparison operators" << endl;
+                        cout << "-------------------------" << endl;
+                        cout << "r4 > r5: " << (r4 > r5 ? "true" : "false") << endl;
+                        cout << "r4 < r5: " << (r4 < r5 ? "true" : "false") << endl;
+                        cout << "r4 == r5: " << (r4 == r5 ? "true" : "false") << endl;
+
+                        anotherFractionRun = false;
+                    } else {
+                        cout << "Please insert a valid fraction." << endl;
+                    }
+
+                } while(anotherFractionRun);
+            } else {
+                cout << "Please insert a valid fraction." << endl;
             }
         } while(stringConstRun);
-
-        string anotherFraction;
-        bool anotherFractionRun = true;
-
-        do {
-            // String constructor
-            Rational r4(fraction);
-            cout << "r4: " << r4 << endl;
-
-            cout << "\nPlease insert another fraction: " << endl;
-            getline(cin, anotherFraction);
-
-            if (regex_match(anotherFraction, validFractionRegex)) {
-
-                // String constructor
-                Rational r5(anotherFraction);
-                cout << "r5: " << r5 << endl;
-
-                 // Overloaded operators
-                Rational result1 = r4 + r5;
-                cout << "r4 + r5: " << result1 << endl;
-
-                Rational result2 = r4 - r5;
-                cout << "r4 - r5: " << result2 << endl;
-
-                Rational result3 = r4 * r5;
-                cout << "r4 * r5: " << result3 << endl;
-
-                Rational result4 = r4 / r5;
-                cout << "r4 / r5: " << result4 << endl;
-
-                // Comparison operators
-                cout << "\nr4 > r5: " << (r4 > r5 ? "true" : "false") << endl;
-                cout << "r4 < r5: " << (r4 < r5 ? "true" : "false") << endl;
-                cout << "r4 == r5: " << (r4 == r5 ? "true" : "false") << endl;
-
-                anotherFractionRun = false;
-            }
-
-        } while(anotherFractionRun);
 
         char choice;
         cout << "\nDo you want to enter more numbers? (Y/N): ";

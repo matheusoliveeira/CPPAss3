@@ -86,25 +86,44 @@ void Rational::normalize() {
 
 // Overloaded operators
 Rational Rational::operator+(const Rational& other) const {
-    return Rational(numerator * other.denominator + other.numerator * denominator,
+    cout << "\n------------------------------" << endl;
+    cout << "Addition operator fired" << endl;
+    cout << "------------------------------" << endl;
+    Rational result(numerator * other.denominator + other.numerator * denominator,
                     denominator * other.denominator);
+    result.normalize();
+    return result;
 }
 
 Rational Rational::operator-(const Rational& other) const {
-    return Rational(numerator * other.denominator - other.numerator * denominator,
+    cout << "\n------------------------------" << endl;
+    cout << "Subtraction operator fired" << endl;
+    cout << "------------------------------" << endl;
+    Rational result(numerator * other.denominator - other.numerator * denominator,
                     denominator * other.denominator);
+    result.normalize();
+    return result;
 }
 
 Rational Rational::operator*(const Rational& other) const {
-    return Rational(numerator * other.numerator, denominator * other.denominator);
+    cout << "\n------------------------------" << endl;
+    cout << "Multiplication operator fired" << endl;
+    cout << "------------------------------" << endl;
+    Rational result(numerator * other.numerator, denominator * other.denominator);
+    result.normalize();
+    return result;
 }
 
 Rational Rational::operator/(const Rational& other) const {
+    cout << "\n------------------------------" << endl;
+    cout << "Division operator fired" << endl;
+    cout << "------------------------------" << endl;
     if (other.numerator == 0) {
-        std::cerr << "Error: Division by zero." << std::endl;
-        exit(EXIT_FAILURE);
+        throw std::runtime_error("Error: Division by zero. The denominator cannot be zero.");
     }
-    return Rational(numerator * other.denominator, denominator * other.numerator);
+    Rational result(numerator * other.denominator, denominator * other.numerator);
+    result.normalize();
+    return result;
 }
 
 bool Rational::operator>(const Rational& other) const {

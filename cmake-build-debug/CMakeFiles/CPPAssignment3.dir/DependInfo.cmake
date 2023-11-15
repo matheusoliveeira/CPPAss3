@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/W0471251/CLionProjects/CPPAss3/Rational.cpp" "CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj" "gcc" "CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj.d"
-  "C:/Users/W0471251/CLionProjects/CPPAss3/main.cpp" "CMakeFiles/CPPAssignment3.dir/main.cpp.obj" "gcc" "CMakeFiles/CPPAssignment3.dir/main.cpp.obj.d"
+  "C:/Users/mathe/CLionProjects/CPPAss3/Rational.cpp" "CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj" "gcc" "CMakeFiles/CPPAssignment3.dir/Rational.cpp.obj.d"
+  "C:/Users/mathe/CLionProjects/CPPAss3/main.cpp" "CMakeFiles/CPPAssignment3.dir/main.cpp.obj" "gcc" "CMakeFiles/CPPAssignment3.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
